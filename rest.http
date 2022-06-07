@@ -1,0 +1,37 @@
+### get post
+GET http://localhost:3000
+
+### post request
+POST http://localhost:3000
+
+### login request
+POST http://localhost:3000/auth/login
+Content-Type: application/json
+
+{
+    "email":"santoshi@gmaill.com",
+    "password":"rajeev"
+}
+
+### register request
+POST http://localhost:3000/auth/register
+Content-Type: application/json
+
+{
+    "email":"santoshi@gmaill.com",
+    "password":"rajeev"
+}
+
+### refresh-token request
+POST http://localhost:3000/auth/refresh-token
+Content-Type: application/json
+
+{
+ "refresToken":"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpYXQiOjE2NDI4MjUyMjMsImV4cCI6MTY3NDM4MjgyMywiYXVkIjoiNjFlYjdkMWRjNDQxNzc0MzljMDA3NjVmIiwiaXNzIjoiZXBhbm9ubGluZS5jb20ifQ.SouDjbZ6wZFBv9z4QJTkADaFfQOA3Q8OogCBHPnQOrI"
+}
+
+### logout request
+DELETE http://localhost:3000/logout
+
+### error handler
+GET http://localhost:3000/error-rr
